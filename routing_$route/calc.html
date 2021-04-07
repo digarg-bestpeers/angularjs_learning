@@ -1,0 +1,15 @@
+<div>
+    a = <input ng-model="a"> <br> <br>
+    b = <input ng-model="b"> <br> <br>
+    <button ng-click="doAdd()">Add</button>
+    <button ng-click="doMultiply()">Multiply</button>
+    |
+    <button ng-click="doUpdateResults()">Update Result</button>
+    <br><br><hr>
+    <div ng-show="isLoading == true">
+        <span style="color: red;">Loading....Please wait...</span>
+    </div>
+    <div ng-show="isLoading == false">
+        Calculated result = {{result.data}}
+    </div>
+</div>
